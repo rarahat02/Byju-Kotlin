@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Byju_test</string>
+
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GET STARTED</string>
+
+    <string name="slide_1_title">Engaging Video Lessons</string>
+    <string name="slide_1_desc">Simple and effective videos covering all concepts</string>
+
+    <string name="slide_2_title">Unlimited Tests &amp; Analysis</string>
+    <string name="slide_2_desc">Customized practice tests with in-depth analysis</string>
+
+    <!--    <string name="slide_3_title">Great Discounts</string>
+    <string name="slide_3_desc">Best discounts on every single service we offer!</string>-->
+
+    <string name="slide_4_title">Personalized Learning</string>
+    <string name="slide_4_desc">Unique learning journeys for every student</string>
+
+
+    <string name="sixGrade">6th grade</string>
+    <string name="sevenGrade">7th grade</string>
+    <string name="eightGrade">8th grade</string>
+    <string name="nineGrade">9th grade</string>
+    <string name="tenGrade">10th grade</string>
+    <string name="elevenGrade">11th grade</string>
+    <string name="twelveGrade">12th grade</string>
+
+    <string name="fourthGrade">4th grade</string>
+    <string name="fiveGrade">5th grade</string>
+    <string name="bankPo">Bank PO</string>
+    <string name="campusRecruit">Campus Recruit</string>
+    <string name="cat">CAT</string>
+    <string name="ias">IAS</string>
+    <string name="gre">GRE</string>
+    <string name="gmat">GMAT</string>
+
+    <string name="checkboxClick">onCheckBoxClicked</string>
+
+    <string name="login_text">Already have an account?</string>
+
+    <string name="accessText">Access 100s of Videos and Tests. Track progress. Get personalized analysis</string>
+
+
+
+
+
+    <string name="app_id">1769154213105554</string>
+    <string name="client_token">2e82e71c77d84428cc46111fc1c87a9e</string>
+    <string name="ak_login_protocol_scheme">1769154213105554</string>
+    <string name="permissions_get_accounts_message">Grant permission to read your email address from your device to pre-fill.
+    </string>
+    <string name="permissions_get_accounts_title">Read Email Address</string>
+    <string name="permissions_read_phone_state_message">Grant permission to read your phone number from your device to pre-fill.
+    </string>
+    <string name="permissions_read_phone_state_title">Read Phone Number</string>
+    <string name="permissions_receive_sms_message">Grant permission to read your SMS code from your device to pre-fill.</string>
+    <string name="permissions_receive_sms_title">Read SMS Code</string>
+
+
+
+</resources>

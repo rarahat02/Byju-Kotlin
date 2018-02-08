@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context="com.example.bs206.byju_test.CourseListActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+
+    <!--<FrameLayout
+    android:id="@+id/framelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/select_course">
+
+</FrameLayout>-->
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="384dp"
+        android:layout_height="148dp"
+        android:background="@drawable/match_selection_bg">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="82dp"
+            android:layout_height="76dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/ic_select_course_center" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:text="SELECT A COURSE"
+            android:textColor="#ffff"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+    <!--<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radio2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="117dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/radio1"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+        <CheckBox
+            android:id="@+id/six"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckBoxClicked"
+            android:text="@string/sixGrade" />
+
+        <CheckBox
+            android:id="@+id/eight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckBoxClicked"
+            android:text="@string/eightGrade" />
+
+        <CheckBox
+            android:id="@+id/ten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckBoxClicked"
+            android:text="@string/tenGrade" />
+
+        <CheckBox
+            android:id="@+id/twelve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckBoxClicked"
+            android:text="@string/twelveGrade" />
+
+        <CheckBox
+            android:id="@+id/five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckBoxClicked"
+            android:text="@string/fiveGrade" />
+
+        <CheckBox
+            android:id="@+id/campus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckBoxClicked"
+            android:text="@string/campusRecruit" />
+
+        <CheckBox
+            android:id="@+id/ias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckBoxClicked"
+            android:text="@string/ias" />
+
+        <CheckBox
+            android:id="@+id/gmat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckBoxClicked"
+            android:text="@string/gmat" />
+    </RadioGroup>
+
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radio1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="26dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/radio2"
+        app:layout_constraintTop_toTopOf="@+id/radio2">
+
+        <CheckBox
+            android:id="@+id/seven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckBoxClicked"
+            android:text="@string/sevenGrade" />
+
+        <CheckBox
+            android:id="@+id/nine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckBoxClicked"
+            android:text="@string/nineGrade" />
+
+        <CheckBox
+            android:id="@+id/eleven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckBoxClicked"
+            android:text="@string/elevenGrade" />
+
+        <CheckBox
+            android:id="@+id/four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckBoxClicked"
+            android:text="@string/fourthGrade" />
+
+        <CheckBox
+            android:id="@+id/bankpo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckBoxClicked"
+            android:text="@string/bankPo" />
+
+        <CheckBox
+            android:id="@+id/cat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckBoxClicked"
+            android:text="@string/cat" />
+
+        <CheckBox
+            android:id="@+id/gre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckBoxClicked"
+            android:text="@string/gre" />
+
+    </RadioGroup>
+-->
+
+    <CheckBox
+        android:id="@+id/six"
+        android:layout_width="134dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:button="@drawable/custom_checkbox"
+        android:paddingLeft="16dp"
+        android:text="@string/sixGrade"
+        android:textColor="?android:attr/colorBackgroundFloating"
+        app:layout_constraintEnd_toStartOf="@+id/seven"
+        app:layout_constraintHorizontal_bias="0.312"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+    <CheckBox
+        android:id="@+id/eight"
+        android:layout_width="118dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:button="@drawable/custom_checkbox"
+        android:paddingLeft="16dp"
+        android:text="@string/eightGrade"
+        android:textColor="?android:attr/colorBackgroundFloating"
+        app:layout_constraintEnd_toStartOf="@+id/nine"
+        app:layout_constraintHorizontal_bias="0.226"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/six" />
+
+    <CheckBox
+        android:id="@+id/ten"
+        android:layout_width="120dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:button="@drawable/custom_checkbox"
+        android:paddingLeft="16dp"
+        android:text="@string/tenGrade"
+        android:textColor="?android:attr/colorBackgroundFloating"
+        app:layout_constraintEnd_toStartOf="@+id/eleven"
+        app:layout_constraintHorizontal_bias="0.277"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eight" />
+
+    <CheckBox
+        android:id="@+id/twelve"
+        android:layout_width="122dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:button="@drawable/custom_checkbox"
+        android:paddingLeft="16dp"
+        android:text="@string/twelveGrade"
+        android:textColor="?android:attr/colorBackgroundFloating"
+        app:layout_constraintEnd_toStartOf="@+id/four"
+        app:layout_constraintHorizontal_bias="0.272"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ten" />
+
+    <CheckBox
+        android:id="@+id/five"
+        android:layout_width="124dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:button="@drawable/custom_checkbox"
+        android:paddingLeft="16dp"
+        android:text="@string/fiveGrade"
+        android:textColor="?android:attr/colorBackgroundFloating"
+        app:layout_constraintEnd_toStartOf="@+id/bank"
+        app:layout_constraintHorizontal_bias="0.254"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/twelve" />
+
+    <CheckBox
+        android:id="@+id/campus"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:button="@drawable/custom_checkbox"
+        android:paddingLeft="16dp"
+        android:text="@string/campusRecruit"
+        android:textColor="?android:attr/colorBackgroundFloating"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/five" />
+
+    <CheckBox
+        android:id="@+id/ias"
+        android:layout_width="94dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:button="@drawable/custom_checkbox"
+        android:paddingLeft="16dp"
+        android:text="@string/ias"
+        android:textColor="?android:attr/colorBackgroundFloating"
+        app:layout_constraintEnd_toStartOf="@+id/gre"
+        app:layout_constraintHorizontal_bias="0.163"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campus" />
+
+    <CheckBox
+        android:id="@+id/gmat"
+        android:layout_width="112dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:button="@drawable/custom_checkbox"
+        android:paddingLeft="16dp"
+        android:text="@string/gmat"
+        android:textColor="?android:attr/colorBackgroundFloating"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/gre"
+        app:layout_constraintHorizontal_bias="0.394"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ias"
+        app:layout_constraintVertical_bias="0.125" />
+
+    <CheckBox
+        android:id="@+id/seven"
+        android:layout_width="114dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginTop="8dp"
+        android:button="@drawable/custom_checkbox"
+        android:paddingLeft="16dp"
+        android:text="@string/sevenGrade"
+        android:textColor="?android:attr/colorBackgroundFloating"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+    <CheckBox
+        android:id="@+id/nine"
+        android:layout_width="114dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginTop="16dp"
+        android:button="@drawable/custom_checkbox"
+        android:paddingLeft="16dp"
+        android:text="@string/nineGrade"
+        android:textColor="?android:attr/colorBackgroundFloating"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seven" />
+
+    <CheckBox
+        android:id="@+id/eleven"
+        android:layout_width="114dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginTop="12dp"
+        android:button="@drawable/custom_checkbox"
+        android:paddingLeft="16dp"
+        android:text="@string/elevenGrade"
+        android:textColor="?android:attr/colorBackgroundFloating"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nine" />
+
+    <CheckBox
+        android:id="@+id/four"
+        android:layout_width="115dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginTop="16dp"
+        android:button="@drawable/custom_checkbox"
+        android:paddingLeft="16dp"
+        android:text="@string/fourthGrade"
+        android:textColor="?android:attr/colorBackgroundFloating"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eleven" />
+
+    <CheckBox
+        android:id="@+id/bank"
+        android:layout_width="113dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginTop="16dp"
+        android:button="@drawable/custom_checkbox"
+        android:paddingLeft="16dp"
+        android:text="@string/bankPo"
+        android:textColor="?android:attr/colorBackgroundFloating"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/four" />
+
+    <CheckBox
+        android:id="@+id/cat"
+        android:layout_width="114dp"
+        android:layout_height="28dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginTop="16dp"
+        android:button="@drawable/custom_checkbox"
+        android:paddingLeft="16dp"
+        android:text="@string/cat"
+        android:textColor="?android:attr/colorBackgroundFloating"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bank" />
+
+    <CheckBox
+        android:id="@+id/gre"
+        android:layout_width="110dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginTop="8dp"
+        android:button="@drawable/custom_checkbox"
+        android:paddingLeft="16dp"
+        android:text="@string/gre"
+        android:textColor="?android:attr/colorBackgroundFloating"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cat"
+        app:layout_constraintVertical_bias="0.121" />
+</android.support.constraint.ConstraintLayout>
